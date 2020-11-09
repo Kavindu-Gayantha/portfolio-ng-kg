@@ -1,0 +1,11 @@
+.row{
+  padding-top: 3%;
+  color:darkblue;
+  justify-content: flex-start;
+  font-size: larger;
+}
+.container{
+  padding:2%;
+  margin-top: 3%;
+  text-align: center;
+}

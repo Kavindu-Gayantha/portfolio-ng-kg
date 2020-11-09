@@ -13,7 +13,7 @@
         <a class="nav-link" routerLink='education'>Education</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" routerLink='projects' id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -24,7 +24,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink='activities'>activities</a>
+        <a class="nav-link" routerLink='activities'>Contact me</a>
       </li>
       <!-- <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -36,5 +36,16 @@
     </form>
   </div>
 </nav>
-<app-home></app-home>
-<router-outlet></router-outlet>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      One of three columns
+      <app-home></app-home>
+    </div>
+    <div class="col-sm">
+      <router-outlet></router-outlet>
+
+    </div>
+
+  </div>
+</div>

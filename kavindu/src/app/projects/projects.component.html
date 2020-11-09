@@ -1,1 +1,23 @@
-<p>projects works!</p>
+<div class="container">
+  <h1 class="text-primary">
+    Projects
+  </h1>
+  <div class="text-secondary" *ngFor="let projectList of projectList">
+    <div class="row" style="padding: 2%">
+    <div class="col">
+      <div class="row" style="justify-content: flex-end">
+<!--        pic here-->
+        <img [src] ="projectList.projectPic" alt="project pic" width="200px">
+      </div>
+    </div>
+    <div class="col">
+      <div class="row">
+        {{ this.projectList.projectName }}
+      </div>
+      <div class="row">
+        {{ this.projectList.projectDiscription }}
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

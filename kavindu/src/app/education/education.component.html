@@ -1,6 +1,32 @@
+<!--<div class="container">-->
+<!--  <p >education works! {{title}}</p> -->
+<!--  <h3 class="primary" >Show button here</h3>-->
+<!--  <button class="btn btn-success" (click)="click()"> click me </button>-->
+<!--  -->
+<!--</div>-->
+<!--<li>list of heros</li>-->
 <div class="container">
-  <p >education works! {{title}}</p> 
-  <h3 class="primary" >Show button here</h3>
-  <button class="btn btn-success" (click)="click()"> click me </button>
-  
+  <h1 class="text-primary">
+    Education
+  </h1>
+  <div *ngFor="let educationList of educationList">
+    <div class="row">
+      <div class="col">
+        pic here
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="badge badge-primary">
+              {{this.educationList.nameEdu}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="badge badge-secondary">
+              {{this.educationList.description}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
