@@ -1,22 +1,26 @@
 <div class="container">
 <h1 class="text-primary">Contact Me</h1>
   <div class="row jumbotron">
-    <div class="col">
-      <form>
+    <div class="col-md-6 offset-md-3">
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)"><div class="form-group">
+        <label for="Email">Email</label>
+        <label>
+          <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"formControlName="Email">
+        </label>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" [formControl] ="email"  id="exampleInputEmail1" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="fullname">Full Name</label>
+          <label>
+            <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
+          </label>
         </div>
         <div class="form-group">
-          <label for="exampleInputPassword1">Name</label>
-          <input type="text" class="form-control" [formControl]="name"  id="exampleInputPassword1">
+          <label for="comment">Comment</label>
+          <textarea class="form-control" formControlName="Comment" name="Comment">
+</textarea>
         </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div>
-        <button type="button" (click)="save()" class="btn btn-primary">Primary</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
       </form>
     </div>
   </div>
