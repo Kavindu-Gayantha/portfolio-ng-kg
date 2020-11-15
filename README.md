@@ -1,2 +1,2 @@
 # portfolio-ng-kg
-porfolio with anguar
+porfolio webapp with angular
