@@ -4,6 +4,9 @@
 }
 .container{
   padding:2%;
-  margin-top: 3%;
+  margin-top: 6%;
   text-align: center;
+}
+.text-primary{
+  font-weight: bold;
 }
