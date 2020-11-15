@@ -10,3 +10,8 @@
 .text-primary{
   font-weight: bold;
 }
+.jumbotron{
+  padding: 7%;
+  text-align: left;
+  align-content: flex-end;
+}

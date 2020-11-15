@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AboutComponent } from './about/about.component';
 import { ProjectListComponent } from './project-list/project-list.component';
+import {ContactServiceService} from './contact-service.service';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { ProjectListComponent } from './project-list/project-list.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    ContactServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

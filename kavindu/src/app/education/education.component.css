@@ -1,5 +1,5 @@
 .row{
-  padding-top: 3%;
+  padding: 1%;
   color:darkblue;
 }
 .container{
@@ -9,4 +9,16 @@
 }
 .text-primary{
   font-weight: bold;
+}
+.badge{
+  height: 30px;
+  font-size: 15px;
+  text-align: left;
+  padding:6px;
+  margin: 2px;
+}
+.jumbotron{
+  padding: 7%;
+  text-align: left;
+  align-content: flex-end;
 }

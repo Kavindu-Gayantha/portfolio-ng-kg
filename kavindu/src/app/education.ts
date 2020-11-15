@@ -1,6 +1,6 @@
 // tslint:disable-next-line:no-empty-interface
 export interface Education {
-  id: number;
+  url: string;
   nameEdu: string;
   description: string;
 }
