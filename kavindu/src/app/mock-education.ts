@@ -1,17 +1,17 @@
-import { Education } from './education'
+import { Education } from './education';
 export const EDUCACTION_LIST: Education[] = [
   {
-    id: 1,
+    url: './../../assets/Kelaniya.png',
     nameEdu: 'University of Kelaniya',
     description: 'Software engineering undergraduate',
   },
   {
-    id: 2,
+    url: './../../assets/diploma.png',
     nameEdu: 'Diploma in English',
     description: 'Buddhist & Pali Uni',
   },
   {
-    id: 3,
+    url: './../../assets/pcm.png',
     nameEdu: 'Maths stream',
     description: 'President\'s college Maharagama',
   },
