@@ -7,6 +7,7 @@ import { ProjectsComponent} from './projects/projects.component';
 import { Project1Component } from './projects/project1/project1.component';
 import { Project2Component } from './projects/project2/project2.component';
 import { Project3Component } from './projects/project3/project3.component';
+import {AboutComponent} from './about/about.component';
 // import { ProjectsComponent } from './projects/projects.component';
 
 
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'projects/one', component: ProjectsComponent},
   {path: 'projects/two', component: Project2Component},
   {path: 'projects/three', component: Project3Component},
-  {path: 'projects ', component: ProjectsComponent }
+  {path: 'projects ', component: ProjectsComponent },
+  {path: 'about' , component: AboutComponent},
 ];
 
 @NgModule({

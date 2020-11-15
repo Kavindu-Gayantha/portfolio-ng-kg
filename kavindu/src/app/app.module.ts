@@ -13,6 +13,7 @@ import { Project2Component } from './projects/project2/project2.component';
 import { Project3Component } from './projects/project3/project3.component';
 import { HttpClientModule } from '@angular/common/http'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ActivitiesComponent,
     Project1Component,
     Project2Component,
-    Project3Component
+    Project3Component,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
